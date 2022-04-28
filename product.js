@@ -31,7 +31,7 @@ class ProductPage {
 
     // adding color
     clone.querySelector(".product-color div").style.backgroundColor = el.colors;
-    this._container.append(clone);
+    this._container.prepend(clone);
   }
 
   _ShowImage(container, image, alt) {

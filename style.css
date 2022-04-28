@@ -92,3 +92,29 @@ a {
 }
 
 /* ! Product Page */
+.product h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+.product .price-tag {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.product .short-desc {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.product h2 {
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.product .product-color {
+  position: static;
+}
