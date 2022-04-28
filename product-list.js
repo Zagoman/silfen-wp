@@ -14,6 +14,11 @@ function showProduct(el, parent, template) {
   clone.querySelector("img").alt = el.productname;
 
   //   adding the Titles
+  clone.querySelector("h2").textContent = el.productname;
+  clone.querySelector(".price-tag > span").textContent = el.price;
+
+  // Adding color
+  clone.querySelector(".product-color div").style.backgroundColor = el.colors;
 
   parent.appendChild(clone);
 }

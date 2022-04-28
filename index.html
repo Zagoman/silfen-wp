@@ -7,14 +7,25 @@
     <title>All Products</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>All Products</h1>
-    <section class="product-list"></section>
+  <body id="product-list">
+    <header></header>
+    <main>
+      <section class="hero">
+        <h1>Shop All</h1>
+      </section>
+      <section class="product-list"></section>
+    </main>
+
     <template id="product-temp">
       <article>
-        <img src="" alt="" class="thumbnail" />
-        <h2>Bumbag Kim</h2>
-        <p class="price-tag">DKK <span>399,00</span></p>
+        <a href="./product.html?product=productname">
+          <div class="img-container">
+            <img src="" alt="" class="thumbnail" />
+            <div class="product-color"><div></div></div>
+          </div>
+          <h2>{{Title}}</h2>
+          <p class="price-tag">DKK <span>{{Price}}</span></p>
+        </a>
       </article>
     </template>
     <script src="nav.js"></script>
