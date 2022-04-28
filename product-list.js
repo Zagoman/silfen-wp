@@ -20,6 +20,9 @@ function showProduct(el, parent, template) {
   // Adding color
   clone.querySelector(".product-color div").style.backgroundColor = el.colors;
 
+  // Feed the link
+  clone.querySelector("a").href = `./product.html?product=${el.slug}`;
+
   parent.appendChild(clone);
 }
 
