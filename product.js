@@ -5,7 +5,7 @@ const product = urlParams.get("product");
 
 class ProductPage {
   constructor(data) {
-    this._template = document.querySelector("#product-temp").content;
+    this._template = document.querySelector("#product-temp2").content;
     this._container = document.querySelector("main");
     this._Init(data);
   }
