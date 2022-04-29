@@ -61,7 +61,7 @@ a {
 }
 
 .product-color {
-  width: 24px;
+  width: 18px;
   aspect-ratio: 1;
   background-color: white;
   border: 1px solid #000;
@@ -73,7 +73,7 @@ a {
   align-items: center;
 }
 .product-color div {
-  width: 22px;
+  width: 16px;
   aspect-ratio: 1;
   background-color: blue;
   border-radius: 50%;
@@ -89,6 +89,12 @@ a {
 .product-list p {
   font-size: 0.8rem;
   line-height: 1.2;
+}
+.--link {
+  transition: color 0.2s ease-in;
+}
+.--link:hover {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /* ! Product Page */

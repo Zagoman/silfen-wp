@@ -22,6 +22,7 @@ function showProduct(el, parent, template) {
 
   // Feed the link
   clone.querySelector("a").href = `./product.html?product=${el.id}`;
+  clone.querySelector("a.--link").href = `./product.html?product=${el.id}`;
 
   parent.appendChild(clone);
 }

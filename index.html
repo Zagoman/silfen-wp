@@ -18,14 +18,19 @@
 
     <template id="product-temp">
       <article>
-        <a href="./product.html?product=productname">
-          <div class="img-container">
+        <div href="./product.html?product=productname">
+          <a class="img-container">
             <img src="" alt="" class="thumbnail" />
             <div class="product-color"><div></div></div>
-          </div>
-          <h2>{{Title}}</h2>
+          </a>
+          <a
+            class="product-title --link"
+            href="./product.html?product=productname"
+          >
+            <h2>{{Title}}</h2>
+          </a>
           <p class="price-tag">DKK <span>{{Price}}</span></p>
-        </a>
+        </div>
       </article>
     </template>
     <script src="nav.js"></script>
