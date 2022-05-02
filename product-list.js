@@ -1,34 +1,44 @@
 window.addEventListener("DOMContentLoaded", dataFetch);
 
 class ProductList {
-  constructor(data) {
+  constructor(data, id = null) {
     this._template = document.querySelector("#product-temp").content;
-    this._grid = document.querySelector(".product-list");
+    this._container = document.querySelector(".product-list");
+    this._id = id;
     this._Init(data);
   }
 
   _Init(data) {
-    data.forEach((el) => this._ShowProduct(el, this._grid, this._template));
+    data.forEach((el) => {
+      if (!this._id) {
+        this._ShowProduct(el, this._container, this._template);
+      } else {
+        this._ShowProduct(el, this._container, this._template, this._id);
+      }
+    });
   }
 
-  _ShowProduct(el, parent, template) {
-    const clone = template.cloneNode(true);
-    //   adding the image
-    clone.querySelector("img").src = el.thumbnail.guid;
-    clone.querySelector("img").alt = el.productname;
+  _ShowProduct(el, container, template, id) {
+    if (el.id != id) {
+      const clone = template.cloneNode(true);
+      //   adding the image
+      clone.querySelector("img").src = el.thumbnail.guid;
+      clone.querySelector("img").alt = el.productname;
 
-    //   adding the Titles
-    clone.querySelector("h2").textContent = el.productname;
-    clone.querySelector(".price-tag > span").textContent = el.price;
+      //   adding the Titles
+      clone.querySelector("h2").textContent = el.productname;
+      clone.querySelector(".price-tag > span").textContent = el.price;
 
-    // Adding color
-    clone.querySelector(".product-color div").style.backgroundColor = el.colors;
+      // Adding color
+      clone.querySelector(".product-color div").style.backgroundColor =
+        el.colors;
 
-    // Feed the link
-    clone.querySelector("a").href = `./product.html?product=${el.id}`;
-    clone.querySelector("a.--link").href = `./product.html?product=${el.id}`;
+      // Feed the link
+      clone.querySelector("a").href = `./product.html?product=${el.id}`;
+      clone.querySelector("a.--link").href = `./product.html?product=${el.id}`;
 
-    parent.appendChild(clone);
+      container.appendChild(clone);
+    }
   }
 }
 
@@ -38,6 +48,9 @@ async function dataFetch() {
     "https://lucaszago.dk/silfen-wp/wp-json/wp/v2/product?_embed"
   );
   const data = await res.json();
-
-  _productList = new ProductList(data);
+  if (window.location.search) {
+    _productList = new ProductList(data, product);
+  } else {
+    _productList = new ProductList(data);
+  }
 }

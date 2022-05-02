@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", getData);
-let _APP = null;
+let _productPage = null;
 const urlParams = new URLSearchParams(window.location.search);
 const product = urlParams.get("product");
 
@@ -51,5 +51,5 @@ async function getData() {
   );
   const data = await res.json();
 
-  _APP = new ProductPage(data);
+  _productPage = new ProductPage(data);
 }
