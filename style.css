@@ -185,3 +185,213 @@ input[type="number"] {
   line-height: 1.5;
   padding-bottom: 1rem;
 }
+
+/* sustainability page first section */
+
+#sustain h1 {
+  font-size: 2rem;
+}
+
+#sustain .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+#sustain .introText {
+  background-color: rgb(237, 255, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#sustain .introText .headline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0 1rem 0;
+}
+
+#sustain .fabricWrapper {
+  position: relative;
+}
+
+#sustain .blueWaves_top {
+  position: absolute;
+  top: -1%;
+}
+
+#sustain .blueWaves_bottom {
+  position: absolute;
+  bottom: -1%;
+}
+
+#sustain .fabrics {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#sustain .fabrics .cotton {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#sustain .fabrics .plastic {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#sustain .logo {
+  width: 38%;
+  padding: 1rem 0;
+}
+
+#sustain .fabrics {
+  background-color: rgb(123, 175, 212, 0.5);
+}
+
+#sustain .conditionsText {
+  background-color: #aed5b2;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#sustain .future {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+#sustain .yellowWaves_top {
+  position: absolute;
+  top: 35%;
+}
+
+#sustain .goalIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+#sustain .goalsList {
+  background-color: rgb(237, 255, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#sustain .goalsList h3 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  #sustain main {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  #sustain h1 {
+    font-size: 2rem;
+  }
+  #sustain .intro {
+    margin: 4rem;
+    position: relative;
+  }
+
+  #sustain .bagAir {
+    position: absolute;
+    width: 48%;
+    right: 3%;
+    top: -3%;
+  }
+
+  #sustain .introText {
+    padding: 3rem 50% 3rem 3rem;
+    gap: 2rem;
+    max-width: 55ch;
+  }
+
+  #sustain .blueWaves_top {
+    top: -5%;
+  }
+  #sustain .blueWaves_bottom {
+    bottom: -4%;
+  }
+
+  #sustain .yellowWaves_top {
+    top: -14%;
+  }
+
+  #sustain .fabrics {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 0;
+    padding: 2rem 4rem 4rem 4rem;
+  }
+
+  #sustain .fabricHead {
+    grid-column: span 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 0 1rem 0;
+  }
+
+  #sustain .plastic {
+    border-left: black solid 1px;
+    padding-left: 4rem;
+  }
+
+  #sustain .cotton {
+    padding-right: 4rem;
+  }
+
+  #sustain .fabrics h4 {
+    text-align: center;
+  }
+
+  #sustain .conditions {
+    position: relative;
+  }
+
+  #sustain .sunbag {
+    position: absolute;
+    width: 28%;
+    left: 12%;
+    top: 10%;
+  }
+
+  #sustain .conditions .conditionsText {
+    max-width: 60ch;
+    margin: 0 5rem 0 25%;
+    padding: 4rem 2rem 4rem 20%;
+  }
+
+  #sustain .goalsList {
+    padding: 4rem;
+    margin: 2rem 8rem;
+  }
+  #sustain .goalsList p {
+    max-width: 75ch;
+    margin: auto;
+  }
+
+  #sustain .goalIntro {
+    padding: 0 4rem 4rem 4rem;
+    margin: 5rem 0 0 0;
+  }
+}
