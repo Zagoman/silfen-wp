@@ -189,7 +189,9 @@ input[type="number"] {
 }
 
 .related {
-  padding-top: 4rem;
+  padding-top: 6rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .related h2 {
@@ -210,6 +212,9 @@ input[type="number"] {
 .splide__slide {
   display: flex;
   justify-content: center;
+}
+.splide img {
+  object-fit: cover;
 }
 
 @media screen and (min-width: 800px) {
