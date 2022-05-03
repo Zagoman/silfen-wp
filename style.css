@@ -361,8 +361,9 @@ input[type="number"] {
   #sustain .bagAir {
     position: absolute;
     width: 48%;
+    top: 50%;
     right: 3%;
-    top: -3%;
+    transform: translateY(-50%);
   }
 
   #sustain .introText {
