@@ -6,9 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Products</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav_footer.css" />
   </head>
   <body id="product-list">
-    <header></header>
+    <header>
+      <div class="top_bar">
+        <p>Free shipping in Denmark</p>
+        <p>Shipping to: Denmark (DKK)</p>
+      </div>
+      <nav>
+        <button>
+          <img src="/burger_menu.png" id="burger_menu" alt="Menu icon" />
+        </button>
+
+        <ul class="container_menu closed">
+          <li><a href="">New in</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Sustainability</a></li>
+          <li><a href="">Silfen Play</a></li>
+        </ul>
+
+        <div class="logo">
+          <img src="/silfen-logo-black.png" alt="logo" />
+        </div>
+
+        <div class="icons">
+          <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 37 37">
+            <path
+              d="M35,33.3c0-0.1-2.1-11.1-12.4-13.5c3.1-1.5,5.3-4.7,5.3-8.5c0-5.2-4.2-9.4-9.4-9.4c-5.2,0-9.4,4.2-9.4,9.4
+    c0,3.7,2.1,6.8,5.1,8.4C3.6,22,1.5,33.1,1.5,33.3l-0.2,0.9h33.9L35,33.3z M10.5,11.3c0-4.4,3.6-8,8-8s8,3.6,8,8c0,4.3-3.4,7.8-7.6,8
+    c-0.2,0-0.4,0-0.7,0c-0.1,0-0.2,0-0.4,0C13.8,18.9,10.5,15.5,10.5,11.3z M3.2,32.6C4,29.8,7.4,20.7,18.2,20.7c11,0,14.3,9,15.1,11.9
+    H3.2z"
+            ></path>
+          </svg>
+          <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 37 37">
+            <path
+              d="M34.3,33.1L23.7,22.4c1.8-2.1,2.9-4.9,2.9-7.9c0-6.8-5.5-12.2-12.2-12.2C7.7,2.2,2.2,7.7,2.2,14.5s5.5,12.2,12.2,12.2
+                  c3,0,5.7-1.1,7.9-2.9l10.6,10.6L34.3,33.1z M14.4,24.7c-5.6,0-10.2-4.6-10.2-10.2S8.8,4.2,14.4,4.2c5.6,0,10.2,4.6,10.2,10.2
+                  S20.1,24.7,14.4,24.7z"
+            ></path>
+          </svg>
+
+          <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 37 37">
+            <path
+              d="M24.9,11.4V9.6c0-3.5-2.9-6.4-6.4-6.4S12,6,12,9.6v1.8H3.7l2.7,21.9h24l2.9-21.9H24.9z M13.5,9.6c0-2.7,2.2-4.9,4.9-4.9 s4.9,2.2,4.9,4.9v1.8h-9.9V9.6z M29.1,31.8H7.7L5.4,12.9H12v3.9h1.5v-3.9h9.9v3.9h1.5v-3.9h6.7L29.1,31.8z"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -17,7 +64,55 @@
       </section>
       <section class="product-list"></section>
     </main>
+    <footer id="footer">
+      <div>
+        <div class="title">Come join us, subscribe here!</div>
+        <p>
+          We’ve been waiting for you! Be the first to know about new arrivals,
+          promotional offers and much more.
+        </p>
+        <div id="signup"><p id="button">E-mail adress</p></div>
+      </div>
+      <div>
+        <div class="title">Silfen Studio</div>
 
+        <div>
+          <p>Klareboderne 10, 1.</p>
+          <p>1115 Copenhagen K</p>
+          <p>Denmark</p>
+        </div>
+        <div id="data2">
+          <p>Phone: +45 20518923</p>
+          <p>VAT: DK40912320</p>
+        </div>
+      </div>
+      <div>
+        <div class="title">Silfen Warehouse</div>
+        <p>Adax A/S, Att: Silfen Studio</p>
+        <p>Vestre Hedevej 18</p>
+        <p>DK-4000 Roskilde</p>
+        <p>Denmark</p>
+      </div>
+      <div>
+        <div class="title">Help</div>
+        <div id="help_links">
+          <a href="">About</a>
+          <a href="">Sustainability</a>
+          <a href="">Order Tracking</a>
+          <a href="">Currency</a>
+          <a href="">Contact</a>
+          <a href="">Delivery & returns</a>
+          <a href="">Return items</a>
+        </div>
+      </div>
+      <div>
+        <p>© 2021. Silfen Studio. All rights reserved</p>
+        <p>Terms & Conditions Privacy & Cookie Policy</p>
+      </div>
+      <div id="social_media">
+        <p>Connect</p>
+      </div>
+    </footer>
     <template id="product-temp">
       <article>
         <div href="./product.html?product=productname">
@@ -35,6 +130,7 @@
         </div>
       </article>
     </template>
+    <script src="burger_menu.js"></script>
     <script src="nav.js"></script>
     <script src="product-list.js"></script>
   </body>
