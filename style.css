@@ -330,7 +330,7 @@ input[type="number"] {
   }
 
   #sustain .yellowWaves_top {
-    top: -14%;
+    top: -4%;
   }
 
   #sustain .fabrics {
@@ -371,8 +371,8 @@ input[type="number"] {
   #sustain .sunbag {
     position: absolute;
     width: 28%;
-    left: 12%;
-    top: 10%;
+    left: 13%;
+    top: -4%;
   }
 
   #sustain .conditions .conditionsText {
@@ -391,7 +391,7 @@ input[type="number"] {
   }
 
   #sustain .goalIntro {
-    padding: 0 4rem 4rem 4rem;
+    padding: 8rem 4rem 4rem 4rem;
     margin: 5rem 0 0 0;
   }
 }
