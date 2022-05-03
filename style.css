@@ -52,6 +52,9 @@ a {
 }
 
 /*! Product List */
+#product-list .product-list {
+  padding-block: 2rem 4rem;
+}
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -111,6 +114,9 @@ a {
   color: rgba(0, 0, 0, 0.4);
 }
 @media screen and (min-width: 780px) {
+  #product-list .product-list {
+    padding-block: 4rem 6rem;
+  }
   .product-list {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
