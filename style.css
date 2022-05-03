@@ -459,20 +459,31 @@ video {
   width: 100%;
   object-fit: cover;
 }
-#sustain h1.text-overlay {
-  font-size: 2.8rem;
-  line-height: 1.4;
-  color: white;
-  z-index: 10;
+#sustain .overlay-container {
   position: absolute;
   inset: 50% 50% auto auto;
   transform: translate(50%, -50%);
   mix-blend-mode: exclusion;
+}
+#sustain .text-overlay {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: rgb(190, 250, 255);
+  z-index: 10;
+
   text-transform: uppercase;
   text-align: center;
 }
+#sustain .text-overlay.h2 {
+  font-size: 1.8rem;
+  color: rgb(255, 153, 0);
+  mix-blend-mode: exclusion;
+}
 @media screen and (min-width: 800px) {
-  #sustain h1.text-overlay {
+  #sustain .text-overlay {
     font-size: 4rem;
+  }
+  #sustain .text-overlay.h2 {
+    font-size: 2.8rem;
   }
 }
