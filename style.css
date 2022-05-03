@@ -4,6 +4,7 @@
 }
 * {
   margin: 0;
+  padding: 0;
 }
 html {
   box-sizing: border-box;
@@ -261,12 +262,15 @@ input[type="number"] {
 
 #sustain .blueWaves_top {
   position: absolute;
-  top: -1%;
+  inset: 0 auto auto auto;
+  transform: translateY(-50%);
+  width: 100%;
 }
-
 #sustain .blueWaves_bottom {
   position: absolute;
-  bottom: -1%;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 100%;
 }
 
 #sustain .fabrics {
@@ -303,6 +307,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: -1rem;
 }
 
 #sustain .future {
@@ -313,8 +318,9 @@ input[type="number"] {
 }
 
 #sustain .yellowWaves_top {
+  transform: translateY(-50%);
   position: absolute;
-  top: 35%;
+  inset: 0 auto auto auto;
 }
 
 #sustain .goalIntro {
@@ -341,14 +347,14 @@ input[type="number"] {
   #sustain main {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 14rem;
   }
 
   #sustain h1 {
     font-size: 2rem;
   }
   #sustain .intro {
-    margin: 4rem;
+    margin: 4rem 4rem 2rem;
     position: relative;
   }
 
@@ -365,24 +371,20 @@ input[type="number"] {
     max-width: 55ch;
   }
 
-  #sustain .blueWaves_top {
-    top: -5%;
-  }
-  #sustain .blueWaves_bottom {
-    bottom: -4%;
-  }
-
   #sustain .yellowWaves_top {
-    top: -4%;
+    transform: translateY(0);
+    position: relative;
+    width: 100%;
   }
 
   #sustain .fabrics {
-    margin: 5rem;
+    margin-inline: 5rem;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 5rem;
     column-gap: 0;
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 10vw 4rem 10vw 4rem;
   }
 
   #sustain .fabricHead {
@@ -434,7 +436,7 @@ input[type="number"] {
   }
 
   #sustain .goalIntro {
-    padding: 8rem 4rem 4rem 4rem;
+    padding: 2rem 4rem 4rem 4rem;
     margin: 5rem 0 0 0;
   }
 }
