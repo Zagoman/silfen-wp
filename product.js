@@ -28,6 +28,9 @@ class ProductPage {
     clone.querySelector("h1").textContent = el.productname;
     clone.querySelector(".price-tag span").textContent = el.price;
     clone.querySelector(".short-desc").textContent = el.shortdescription;
+    clone.querySelector("p .material").textContent = "Recycled Plastic";
+    clone.querySelector("p .dimension").textContent = el.dimension;
+    document.querySelector("title").textContent = `${el.productname} - SILFEN`;
 
     // adding color
     clone.querySelector(".product-color div").style.backgroundColor = el.colors;
